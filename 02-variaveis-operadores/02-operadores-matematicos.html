@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores matemáticos</title>
+</head>
+<body>
+    <h1>Calculadora simples</h1>
+    <script>
+
+        //declara as variáveis
+        let operando1;
+        let operando2;
+        let soma;
+        let subtração;
+        let multiplicação;
+        let divisão;
+        let restodivisão;
+        let exponenciação;
+        
+
+        //solicita o primeiro operando
+        operando1 = prompt("Digite o primeiro número:");
+
+        //solicita o segundo operando
+        operando2 = prompt("Digite o segundo número:") ;
+
+         //Converter os operandos em números
+        operando1 = parseFloat(operando1);
+        operando2 = parseFloat(operando2);
+
+        // Realizar as contas
+        soma = operando1+operando2;
+        subtração = operando1-operando2;
+        multiplicação = operando1*operando2;
+        divisão = operando1/operando2;
+        restodivisão = operando1%operando2;
+        exponenciação = operando1**operando2;
+        incremento = ++operando1;
+        decremento = --operando1;
+
+        //exiber o resultado
+        document.write("Resultado da adição é: " + soma );
+        document.write("<br>" +  "Resultado da subtração é: " + subtração);
+        document.write("<br>" +  "Resultado da multiplicação é: " + multiplicação);
+        document.write("<br>" +  "Resultado da divisão é: " + divisão );
+        document.write("<br>" +  "Resultado da restodivisão é: " + restodivisão );
+        document.write("<br>" +  "Resultado da exponenciação é: " + exponenciação );
+        document.write("<br>" +  "Unário de Incremento: " + incremento);
+        document.write("<br>" +   "Unário de Decremento: " + decremento);
+
+
+    </script>
+    
+</body>
+</html>
